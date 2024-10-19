@@ -75,3 +75,29 @@ x = Math.floor(x / 10);
     return neg ? -sum : sum;
 
 };
+
+4.Given an integer x, return true if x is a
+palindrome and false otherwise.
+Example 1:
+Input: x = 121
+Output: true
+
+Ans:
+var isPalindrome =function(x) {
+if(x<0)
+return false
+var n;
+n=x;
+var rev=[]
+while(x>0)
+{
+var a=x%10;
+rev.push(a)
+x=Math.trunc(x/10);
+}
+if(n==Number(rev.join('')))
+return true
+else
+return false
+
+}
