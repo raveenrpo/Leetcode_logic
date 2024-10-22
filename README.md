@@ -101,3 +101,20 @@ else
 return false
 
 }
+
+5.Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+
+Ans:
+var removeDuplicates = function(nums) {
+for( i=0;i<nums.length-1;i++){
+for(j=i+1;j<nums.length;j++){
+if(nums[i]==nums[j]){
+nums.splice(j,1)
+j--
+}
+
+    }
+
+}
+return nums.length
+};
