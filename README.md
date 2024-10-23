@@ -118,3 +118,18 @@ j--
 }
 return nums.length
 };
+
+6.Given an unsorted integer array nums. Return the smallest positive integer that is not present in nums.
+You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space
+
+Ans:
+var firstMissingPositive = function(nums) {
+const arr=new Set(nums)
+for(let i=1;i<=nums.length+1;i++)
+{
+if(!arr.has(i)){
+return i
+}
+}
+
+};
