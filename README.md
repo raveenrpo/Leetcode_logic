@@ -158,5 +158,11 @@ matrix[i][j] = matrix[i][l - j - 1];
 matrix[i][l - j - 1] = temp;
 }
 }
+};
 
+8:Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+Ans:
+var myPow = function(x, n) {
+return x\*\*n;
 };
