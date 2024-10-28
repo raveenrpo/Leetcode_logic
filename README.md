@@ -166,3 +166,13 @@ Ans:
 var myPow = function(x, n) {
 return x\*\*n;
 };
+
+9:Given a string s consisting of words and spaces, return the length of the last word in the string.A word is a maximal substring consisting of non-space characters only.
+
+Ans:var lengthOfLastWord = function(s) {
+
+    var str=s.trim().split(" ")
+    var l=str.length
+    return str[l-1].length;
+
+};
